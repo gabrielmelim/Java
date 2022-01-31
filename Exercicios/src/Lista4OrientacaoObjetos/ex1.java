@@ -1,4 +1,4 @@
-package Lista4;
+package Lista4OrientacaoObjetos;
 
 public class ex1 {
 

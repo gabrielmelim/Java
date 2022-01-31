@@ -1,4 +1,4 @@
-package Lista3;
+package Lista3VetorMatriz;
 
 import java.util.Random;
 import java.util.Scanner;

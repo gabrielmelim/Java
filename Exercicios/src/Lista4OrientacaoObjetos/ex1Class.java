@@ -1,4 +1,4 @@
-package Lista4;
+package Lista4OrientacaoObjetos;
 
 //Classe do meu cliente 
 public class ex1Class {

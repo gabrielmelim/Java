@@ -1,4 +1,4 @@
-package Lista2;
+package Lista2Condicionais;
 
 public class ex1 {
 
