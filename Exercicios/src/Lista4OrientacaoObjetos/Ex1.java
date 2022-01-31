@@ -1,9 +1,9 @@
 package Lista4OrientacaoObjetos;
 
-public class ex1 {
+public class Ex1 {
 
 	public static void main(String[] args) {
-		ex1Class cliente = new ex1Class();
+		Ex1Class cliente = new Ex1Class();
 		
 		//definindo valores a váriavel do meu cliente
 		cliente.cpf ="122.122.122-22";
@@ -12,10 +12,10 @@ public class ex1 {
 		cliente.idade=18;
 		
 		//mostrando os valores do meu cliente 
-		cliente.InformarCpf();
-		cliente.InformarNome();
-		cliente.InformarRg();
-		cliente.InformarIdade();
+		cliente.informarcpf();
+		cliente.informarnome();
+		cliente.informarrg();
+		cliente.informaridade();
 
 	}
 

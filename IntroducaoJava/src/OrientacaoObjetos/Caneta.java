@@ -9,13 +9,23 @@
 package OrientacaoObjetos;
 
 public class Caneta {
-	//ATRIBUTOS (variaveis do seu objeto onde irá fazer as definições.)
+	//ATRIBUTOS (variaveis do seu objeto onde irá fazer as definições).
 	String cor;
 	float ponta;
 	int carga;
 	boolean tampada;
 	
-	//METODOS (executa uma ação do seu objeto.)
+	//METODOS (executa uma ação do seu objeto).
+	
+	public Caneta(int valor) // -> metodo construtor. (dentro do parenteses serão criadas variaves)
+	{
+		//definindo como padrão a caneta com tampa fechada.
+		this.tampada = true;
+		
+		//definindo o atributo carga = valor(variavel criada no construtor).
+		this.carga=valor;
+	}
+	
 	public void tampar()
 	{
 		this.tampada=true;

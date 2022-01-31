@@ -2,7 +2,7 @@ package Lista1Introducao;
 
 import java.util.Scanner;
 
-public class ex7 {
+public class Ex7 {
 
 	public static void main(String[] args) {
 

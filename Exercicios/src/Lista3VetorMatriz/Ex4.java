@@ -1,6 +1,6 @@
 package Lista3VetorMatriz;
 import java.util.Scanner;
-public class ex4 {
+public class Ex4 {
 
 	public static void main(String[] args) {
 		int matriz[][] = new int [3][3],i,j,soma=0;

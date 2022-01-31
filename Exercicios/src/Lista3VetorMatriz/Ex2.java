@@ -1,6 +1,6 @@
 package Lista3VetorMatriz;
 import java.util.Random;
-public class ex2 {
+public class Ex2 {
 
 	public static void main(String[] args) {
 		int dado[] = new int [10];	

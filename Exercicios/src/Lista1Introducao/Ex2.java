@@ -3,7 +3,7 @@ package Lista1Introducao;
 import java.util.Scanner;
 
 
-public class ex2 {
+public class Ex2 {
 
 	public static void main(String[] args) {
 		

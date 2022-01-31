@@ -2,7 +2,7 @@ package Lista2Condicionais;
 
 import java.util.Scanner;
 
-public class ex4 {
+public class Ex4 {
 	public static final int limite = 150;
 
 	public static void main(String[] args) {
