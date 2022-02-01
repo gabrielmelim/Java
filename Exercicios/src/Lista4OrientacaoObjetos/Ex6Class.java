@@ -8,23 +8,23 @@ public class Ex6Class {
 	int login,x=0;
 	float saldo=4000;
 	
-	public Ex6Class(String nome,String email, String senha)
-	{
-		this.nome=nome;
-		this.email=email;
-		this.senha=senha;
-	}
 	
 	public void logar()
 	{
 		Scanner ler = new Scanner(System.in);
 		Random gerador = new Random();
+		System.out.print("Cadastre um nome: ");
+		nome=ler.next();
+		System.out.print("Cadastre um email: ");
+		email=ler.next();
+		System.out.print("Cadastre uma senha: ");
+		senha=ler.next();
 		System.out.println("___________________________________________________________");
 		System.out.println("verificando dados da conta...");
 		System.out.println("nome: "+nome);
 		System.out.println("email: "+email);
 		System.out.println("senha: "+senha);
-		id=gerador.nextInt(6)+1;
+		id=gerador.nextInt(1000)+1;
 		System.out.println("gerando id da sua conta....");
 		System.out.println("ID: "+id);
 		System.out.println("___________________________________________________________");
@@ -42,16 +42,18 @@ public class Ex6Class {
 				case 1:
 					System.out.print("informe seu ID para continuar ou aperte 0 para sair: ");
 					verificarid=ler.nextInt();
-					System.out.print("informe sua senha para continuar ou aperte 0 para sair: ");
-					verificar_senha=ler.next();
-					System.out.println(verificar_senha);
-					System.out.println(senha);
-					if(verificarid==id && senha==verificar_senha)
+					//System.out.print("informe sua senha para continuar ou aperte 0 para sair: ");
+					//verificar_senha=ler.next();
+					//System.out.println(verificar_senha);
+					//System.out.println(senha);
+					if(verificarid==id)
 					{
-						System.out.println("LOGADO COM SUCESSO!");
+						System.out.println("\nLOGADO COM SUCESSO!");
 						System.out.println("Saldo: "+saldo);
 						System.out.println("saindo...");
 					}
+					else
+						System.out.println("Id Invalido!!");
 				break;
 				default:
 					System.out.println("Erro verifique seus dados!");

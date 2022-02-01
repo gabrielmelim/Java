@@ -1,6 +1,6 @@
 package Lista5Heranca;
 
-public class AcoesAnimais {
+public class InformacoesAnimais {
 
 	public static void main(String[] args) {
 		Cachorro cachorro = new Cachorro();
