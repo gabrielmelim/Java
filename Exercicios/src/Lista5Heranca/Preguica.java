@@ -1,7 +1,7 @@
 package Lista5Heranca;
 
 public class Preguica extends Animais {
-	private String acao;
+	private String acao,emitir_som;
 
 	
 	public String getAcao() {
@@ -10,6 +10,14 @@ public class Preguica extends Animais {
 
 	public void setAcao(String acao) {
 		this.acao = acao;
+	}
+
+	public String getEmitir_som() {
+		return emitir_som;
+	}
+
+	public void setEmitir_som(String emitir_som) {
+		this.emitir_som = emitir_som;
 	}
 	
 	
