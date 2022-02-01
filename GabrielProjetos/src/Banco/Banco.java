@@ -1,15 +1,17 @@
-package Lista4OrientacaoObjetos;
-
+package Banco;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ex6Class {
 
+public class Banco {
+	
 	private String nome, cpf, email, senha;
 	private int id, verificarid;
 	private String verificar_senha,verificar_email,verificando;
 	private int login,cont,sair;
 	private float saldo_total=100,novo_saldo,saldo,sacar_saldo,conta;
+	
+	
 	public void cadastrar() {
 		Scanner ler = new Scanner(System.in);
 		Random gerador = new Random();
@@ -30,7 +32,7 @@ public class Ex6Class {
 		System.out.println("___________________________________________________________");
 
 	}
-
+	
 	public void logar() {
 		Scanner ler = new Scanner(System.in);
 		System.out.println("fazendo login na conta bancaria aguarde um instante....\n");
@@ -44,6 +46,10 @@ public class Ex6Class {
 			
 			if(login==1)
 			{
+				/*System.out.println("Para sair da conta digite 0 para continuar digite 1");
+				sair=ler.nextInt();
+				if(sair==0)
+					cont=sair;*/
 				
 				System.out.print("Digite seu Email: ");
 				verificar_email=ler.next();
@@ -52,7 +58,15 @@ public class Ex6Class {
 				if(verificar_email.equals(email) && verificar_senha.equals(senha))
 				{
 					System.out.println("\nLOGADO COM SUCESSO!\n");
-				
+					System.out.print("Por Favor digite 1 para depositar, 2 para sacar, 3 ver saldo:");
+					verificando=ler.next();
+					
+					if(verificando.equals("1"))
+					{
+						System.out.println("Digite o ID da sua conta para continuar: ");
+						verificarid=ler.nextInt();
+						
+					}
 				}
 				else
 					System.out.println("Email ou Senha inválidos");
@@ -100,6 +114,5 @@ public class Ex6Class {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-			
-	
+
 }
