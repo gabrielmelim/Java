@@ -19,7 +19,7 @@ public class Ex2 {
 		quantidade=ler.nextInt();
 		
 		Ex2Class aviao = new Ex2Class(marca,cor,peso,quantidade);
-		aviao.mostrarinformacao();
+		aviao.status();
 		
 		
 	}

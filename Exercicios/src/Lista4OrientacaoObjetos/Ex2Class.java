@@ -14,7 +14,7 @@ public class Ex2Class {
 			this.quantidade=quantidade;
 		}
 		
-		public void mostrarinformacao() 
+		public void status() 
 		{
 			System.out.println("_______________________________");
 			System.out.println("Marca: "+marca);
