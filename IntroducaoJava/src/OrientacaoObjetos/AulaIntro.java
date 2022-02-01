@@ -18,23 +18,11 @@ public class AulaIntro {
 		//passando o valor da variavel X informado no print.
 		Caneta caneta1 =  new Caneta(x); 
 		
-		caneta1.cor="Azul";
-		caneta1.ponta=0.5f;
-		caneta1.tampar();
-		//caneta1.carga=80; //definindo valor direto da minha classe.
-		caneta1.status();
-		caneta1.escrever();
+		System.out.println("A carga está em: "+caneta1.getCarga());
+		caneta1.setCarga(30);
+		System.out.println("A carga foi alterada para: "+caneta1.getCarga());
 		
-		System.out.print("Informe a carga: ");
-		x=ler.nextInt();
-		System.out.println("_____________________________");
-		Caneta caneta2 = new Caneta(x);
-		caneta2.cor="Vermelha";
-		caneta2.ponta=0.7f;
-		caneta2.destampar();
-		//caneta2.carga=30; // definindo valor direto da minha classe.
-		caneta2.status();
-		caneta2.escrever();
+		
 
 	}
 

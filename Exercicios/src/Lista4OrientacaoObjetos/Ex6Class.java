@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class Ex6Class {
 	
-	String nome,email,senha;
+	String nome,email,senha,verificar_senha;
 	int id,verificarid;
 	int login,x=0;
 	float saldo=4000;
@@ -29,7 +29,7 @@ public class Ex6Class {
 		System.out.println("ID: "+id);
 		System.out.println("___________________________________________________________");
 		System.out.println("fazendo login na conta bancaria aguarde um instante....");
-		System.out.println("por favor selecione a opção 1 para fazer login, opção 2 para sair.");
+		System.out.println("por favor selecione a opção 1 para fazer login, opção 0 para sair.");
 		System.out.print("informe o numero: ");
 		login=ler.nextInt();
 		System.out.println("___________________________________________________________");
@@ -40,10 +40,13 @@ public class Ex6Class {
 			switch(login)
 			{
 				case 1:
-					System.out.println("informe seu ID para continuar ou aperte 0 para sair: ");
+					System.out.print("informe seu ID para continuar ou aperte 0 para sair: ");
 					verificarid=ler.nextInt();
-					
-					if(verificarid==id)
+					System.out.print("informe sua senha para continuar ou aperte 0 para sair: ");
+					verificar_senha=ler.next();
+					System.out.println(verificar_senha);
+					System.out.println(senha);
+					if(verificarid==id && senha==verificar_senha)
 					{
 						System.out.println("LOGADO COM SUCESSO!");
 						System.out.println("Saldo: "+saldo);
@@ -54,7 +57,7 @@ public class Ex6Class {
 					System.out.println("Erro verifique seus dados!");
 			}
 		
-		}while(verificarid !=x); 
+		}while(verificarid !=0); 
 		System.out.println("deslogado com sucesso!");
 	}
 	

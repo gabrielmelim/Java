@@ -10,9 +10,9 @@ package OrientacaoObjetos;
 
 public class Caneta {
 	//ATRIBUTOS (variaveis do seu objeto onde irá fazer as definições).
-	String cor;
-	float ponta;
-	int carga;
+	private String cor;
+	private float ponta;
+	private int carga;
 	boolean tampada;
 	
 	//METODOS (executa uma ação do seu objeto).
@@ -51,4 +51,30 @@ public class Caneta {
 		System.out.println("Está tampada? "+this.tampada);
 		System.out.println("Carga: "+this.carga+"%");
 	}
+	
+
+	public int getCarga() {
+		return carga;
+	}
+
+	public void setCarga(int carga) {
+		this.carga = carga;
+	}
+
+	public boolean isTampada() {
+		return tampada;
+	}
+
+	public void setTampada(boolean tampada) {
+		this.tampada = tampada;
+	}
+
+	public String getCor() {
+		return cor;
+	}
+
+	public void setPonta(float ponta) {
+		this.ponta = ponta;
+	}
+	
 }
