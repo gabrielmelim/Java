@@ -1,0 +1,17 @@
+package Polimorfismo;
+
+public class Mamifero extends Animal {
+	
+	@Override
+	public void emitirSom()
+	{
+		System.out.println("Som de mamifero");
+	}
+	
+	@Override 
+	public void movimentar()
+	{
+		System.out.println("Correndo...");
+	}
+
+}

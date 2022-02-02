@@ -1,30 +1,31 @@
 package Lista5Heranca;
 
-public class Animais {
+public abstract class Animais {
 	  private String nome;
 	  private int idade;
-	  private boolean emitirSom;
+	  private String emitirSom;
 	
 	  
 	  
-	  public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-	public int getIdade() {
-		return idade;
-	}
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
-	public boolean isEmitirSom() {
-		return emitirSom;
-	}
-	public void setEmitirSom(boolean emitirSom) {
-		this.emitirSom = emitirSom;
-	}
+	  public void line()
+	  {
+		  System.out.println("_____________________________________________________________________________________________________________");
+	  }
+	  
+	  public void nome()
+	  {
+		  System.out.print("Nome Padrao");
+	  }
+	  
+	  public void idade()
+	  {
+		  System.out.print("		Idade Padrao");
+	  }
+
+	  public void emitirSom()
+	  {
+		  System.out.print("		Som Padrao");
+	  }
 	  
 	  
 }

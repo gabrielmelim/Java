@@ -1,27 +1,28 @@
 package Lista5Heranca;
 
-public class Preguica extends Animais {
-	private String acao,emitir_som;
+public class Preguica extends Cachorro 
+{
 
-	
-	public String getAcao() {
-		return acao;
-	}
-
-	public void setAcao(String acao) {
-		this.acao = acao;
-	}
-
-	public String getEmitir_som() {
-		return emitir_som;
-	}
-
-	public void setEmitir_som(String emitir_som) {
-		this.emitir_som = emitir_som;
+	@Override
+	public void movimentar()
+	{
+		System.out.println("		Ação: Correndo");
 	}
 	
-	
-	
-	
+	@Override
+	 public void nome()
+	  {
+		  System.out.print("Nome: Preguiça");
+	  }
+	@Override
+	  public void idade()
+	  {
+		  System.out.print("		Idade: 80");
+	  }
+	@Override
+	  public void emitirSom()
+	  {
+		  System.out.print("		Som: De Preguiça");
+	  }
 	
 }
