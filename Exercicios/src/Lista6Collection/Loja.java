@@ -9,19 +9,20 @@ public class Loja {
 		int id;
 		
 		loja.Cadastrar();
+		loja.line();
 		loja.ImprimirProdutos();
 		
+		loja.line();
 		System.out.print("Informe o id do produto a ser deletado: ");
 		id = ler.nextInt();
-		
 		loja.Deletar(id);
-		
+		loja.line();
 		loja.ImprimirProdutos();
 		
 		System.out.print("Informe o id do produto a ser alterado: ");
 		id = ler.nextInt();
-		
 		loja.Alterar(id);
+		loja.line();
 		loja.ImprimirProdutos();
 
 	}
